@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile Card Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+    <div class="box">
+        <h1>Padhiyar Rehnuma</h1>
+        <p id="t1">Hello! I am Rehnuma Padhiyar, a passionate and aspiring frontend developer. <br>
+            I have basic knowledge of HTML, CSS and Bootstrap, and I enjoy creating clean, responsive and attractive
+            websites. <br>
+            I am motivated to learn new skills, improve my expertise, and grow in the field of web development while
+            exploring new technologies.</p>
+    </div>
+    <ul>
+        <li onclick="showAlert(this)"> HTML</li>
+        <li onclick="showAlert(this)"> CSS</li>
+        <li onclick="showAlert(this)"> Bootstrap</li>
+        <li onclick="showAlert(this)"> Java Script</li>
+    </ul>
+    <input type="button" value="Contact Me" onclick="contact()">
+
+     <script>
+        function contact(){
+            alert("Contact me at : padhiyarrehnuma@gmail.com");
+        }
+        function showAlert(element){
+            alert("You Clicked on"+ element.innerHTML);
+
+            element.style.background = "linear-gradient(135deg, #fad0c4, #6a11cb)";
+            element.style.color = "white";
+        }
+    </script>
+    </div>
+</body>
+
+</html>
